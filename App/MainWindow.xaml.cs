@@ -22,7 +22,7 @@ namespace YouTuber {
     public partial class MainWindow : Window {
 
         public MainWindow() {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e) {
