@@ -31,23 +31,27 @@ namespace YouTuber {
 
         }
 
-        private void Print(List<List<string>> list) {
-            foreach (List<string> category in list) {
-                foreach (string item in category) {
-                    txtConsole.AppendText(item + Environment.NewLine);
-                }
-            }
-        }
+        //private void Print(List<List<string>> list) {
+        //    if (this.txtConsole.Dispatcher.CheckAccess()) {
+        //        foreach (List<string> category in list) {
+        //            foreach (string item in category) {
+        //                txtConsole.AppendText(item + Environment.NewLine);
+        //            }
+        //        }
+        //    } else {
+        //        txtConsole.Dispatcher.Invoke(() => Print(list));
+        //    }
+        //}
 
-        private void Print(List<string> list) {
-            foreach (string item in list) {
-                txtConsole.AppendText(item + Environment.NewLine);
-            }
-        }
+        //private void Print(List<string> list) {
+        //    foreach (string item in list) {
+        //        txtConsole.AppendText(item + Environment.NewLine);
+        //    }
+        //}
 
-        private void Print(string str) {
-            txtConsole.AppendText(str + Environment.NewLine);
-        }
+        //private void Print(string str) {
+        //    txtConsole.AppendText(str + Environment.NewLine);
+        //}
 
         private async void Run() {
             YouTubeService youtubeService = new YouTubeService(new BaseClientService.Initializer() {
@@ -86,7 +90,7 @@ namespace YouTuber {
 
             List<List<string>> result = new List<List<string>>{ videos, channels, playlists };
 
-            Print(result);
+            //Print(result);
         }
     }
 }

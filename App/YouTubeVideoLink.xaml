@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="YouTuber.YouTubeVideoLink"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:YouTuber"
+             mc:Ignorable="d" Height="130" Width="489.166">
+    <Grid>
+        <Image x:Name="imgThumbnail"  HorizontalAlignment="Left" Height="110" Margin="10,10,0,0" VerticalAlignment="Top" Width="196"/>
+        <Label x:Name="lblTitle" Content="Title" HorizontalAlignment="Left" Margin="211,10,0,0" VerticalAlignment="Top" Foreground="WhiteSmoke" Width="268" Height="27"/>
+        <Label x:Name="lblChannel" Content="Channel" HorizontalAlignment="Left" Margin="219,27,0,0" VerticalAlignment="Top" Foreground="WhiteSmoke" Width="260" Height="27"/>
+        <Label x:Name="lblDateViews" Content="DateViews" HorizontalAlignment="Left" Margin="219,43,0,0" VerticalAlignment="Top" Foreground="WhiteSmoke" Width="260" Height="27"/>
+        <Label x:Name="lblDescription" Content="Description" HorizontalAlignment="Left" Margin="219,59,0,0" VerticalAlignment="Top" Foreground="WhiteSmoke" Height="61" Width="260"/>
+    </Grid>
+</UserControl>
